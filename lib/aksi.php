@@ -9,6 +9,12 @@ switch ($aksi) {
    case 'detail':
       include 'contents/detail.php';
       break;
+   case 'daftar-pemesanan':
+      include 'contents/daftar-pemesanan.php';
+      break;
+   case 'hapus':
+      include 'contents/hapus.php';
+      break;
 
    default:
       include 'contents/main.php';

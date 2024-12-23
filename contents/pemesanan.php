@@ -4,7 +4,7 @@
          <div data-aos="fade-up" class="col-md-12 heading-section text-center">
             <h2 class="mb-4">Buat Pesanan Kamu</h2>
          </div>
-         <main class="flex-shrink-0">
+<main class="flex-shrink-0">
             <div class="container">
                <form method="post" action="lib/proses.php">
                   <div class="card mt-2" data-aos="fade-up">
@@ -67,7 +67,7 @@
                            <label for="total" class="form-label">Total Tagihan</label>
                            <input type="number" class="form-control" id="total" name="total" placeholder="Total Paket Perjalanan" readonly>
                         </div>
-                     </div>
+                     </div>         
                      <div class="card-footer">
                         <input type="submit" class="btn btn-primary" value="Simpan">
                         <input type="reset" class="btn btn-danger" value="Ulangi">

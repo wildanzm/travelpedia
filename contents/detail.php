@@ -25,7 +25,7 @@ if (mysqli_num_rows($query) == 0) {
          <form method="post" action="lib/proses.php">
             <div class="card mt-2" data-aos="fade-up">
                <div class="card-header bg-dark text-white">
-                  Invoice Pemesanan <?= $detail[0] ?>
+                  Invoice Pemesanan #<?= $detail[0] ?>
                </div>
                <div class="card-body">
                   <div class="mb-3">

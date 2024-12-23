@@ -9,6 +9,7 @@
             <li class="nav-item"><a href="index.php?aksi=pemesanan" class="nav-link fw-bold">Pemesanan</a></li>
             <li class="nav-item"><a href="#" class="nav-link fw-bold">Destination</a></li>
             <li class="nav-item"><a href="#" class="nav-link fw-bold">Gallery</a></li>
+            <li class="nav-item"><a href="index.php?aksi=daftar-pemesanan" class="nav-link fw-bold">Daftar Pemesanan</a></li>
          </ul>
       </div>
    </div>
