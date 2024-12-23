@@ -12,10 +12,10 @@ $query = mysqli_query($db, $sql);
 
 if (mysqli_num_rows($query) == 0) {
 ?>
-   <h1 class="text-center my-3">Daftar Pemesanan</h1>
-   <table class="table table-primary table-striped mb-5 container">
-      <thead>
-         <tr>
+   <h1 class="text-center fw-bold my-3">Daftar Pemesanan</h1>
+   <table class="table mb-5 container border">
+      <thead class="table-secondary">
+         <tr align="center">
             <th scope="col">#</th>
             <th scope="col">Nama Pemesan</th>
             <th scope="col">Nomor HP</th>
@@ -34,13 +34,12 @@ if (mysqli_num_rows($query) == 0) {
       </tbody>
    </table>
 <?php
-   exit;
 } else {
 ?>
-   <h1 class="text-center my-3">Daftar Pemesanan</h1>
-   <table class="table table-primary table-striped mb-5 container">
-      <thead>
-         <tr>
+   <h1 class="text-center fw-bold my-3">Daftar Pemesanan</h1>
+   <table class="table mb-5 border container">
+      <thead class="table-secondary">
+         <tr align="center">
             <th scope="col">#</th>
             <th scope="col">Nama Pemesan</th>
             <th scope="col">Nomor HP</th>
@@ -57,7 +56,7 @@ if (mysqli_num_rows($query) == 0) {
          $co = 1;
          while ($detail = mysqli_fetch_assoc($query)) {
          ?>
-            <tr>
+            <tr align="center">
                <th scope="row"><?= $co ?></th>
                <td><?= $detail['nama'] ?></td>
                <td><?= $detail['no_hp'] ?></td>
@@ -66,9 +65,8 @@ if (mysqli_num_rows($query) == 0) {
                <td><?= $detail['jumlah_peserta'] ?> orang</td>
                <td><?= $detail['paket_wisata'] ?></td>
                <td>Rp. <?= number_format($detail['total_tagihan'], 0, ',', '.') ?></td>
-               <td><a class="text-success" href="index.php?aksi=detail&id=<?= $detail['id'] ?>">Detail</a>
-                  <a href="index.php?aksi=edit&id=<?= $detail['id'] ?>">Edit</a>
-                  <a class="text-danger" href="index.php?aksi=hapus&id=<?= $detail['id'] ?>">Hapus</a>
+               <td align="center"><a class="btn btn-success mb-2" href="index.php?aksi=detail&id=<?= $detail['id'] ?>"><i class="bi bi-receipt me-1"></i> Invoice</a>
+                  <a class="btn btn-danger" href="index.php?aksi=hapus&id=<?= $detail['id'] ?>"><i class="bi bi-trash-fill me-1"></i> Hapus</a>
                </td>
             </tr>
          <?php
