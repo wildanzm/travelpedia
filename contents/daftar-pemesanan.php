@@ -24,7 +24,7 @@ if (mysqli_num_rows($query) == 0) {
             <th scope="col">Jumlah Peserta</th>
             <th scope="col">Jenis Paket</th>
             <th scope="col">Total Tagihan</th>
-            <th scope="col">Detail</th>
+            <th scope="col">Aksi</th>
          </tr>
       </thead>
       <tbody>
@@ -48,7 +48,7 @@ if (mysqli_num_rows($query) == 0) {
             <th scope="col">Jumlah Peserta</th>
             <th scope="col">Jenis Paket</th>
             <th scope="col">Total Tagihan</th>
-            <th scope="col">Detail</th>
+            <th scope="col">Aksi</th>
          </tr>
       </thead>
       <tbody>
